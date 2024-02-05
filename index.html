@@ -20,43 +20,36 @@
 		<H2 class="CENTER">Postdoctoral Research Scientist</H2>
 		<DIV CLASS="author_info">
 
-		<BR>9 rue Joseph Bouchayer<BR><A ID="tex2html1" target="notarget"
+<!--
+		<BR>9 rue Joseph Bouchayer<BR>
+-->
+		<A ID="tex2html1" target="notarget"
 			HREF="mailto:alexandre.hoffmann.etu@gmail.com">alexandre.hoffmann.etu@gmail.com</A>
 		</DIV>
 		
 		<H1><A ID="SECTION00010000000000000000"> General presentation </A></H1>
 
-		<a href="file:///cv.pdf">Full CV here</a>
+		<a href="https://www.dropbox.com/scl/fi/i465xgftglt184nv4m0f3/cv.pdf?rlkey=h8gjf2zroo9vgekxrb0znbwyv&dl=0">Full CV here</a>
 
 		<H2><A ID="SECTION00011000000000000000"> Education </A></H2>
 
 		<P>
-			2018 - <i class="fas fa-long-arrow-alt-right"></i>
+			2018 <i class="fas fa-long-arrow-alt-right"></i>
 			<strong>PhD thesis in applied mathematics</strong>
 			<em>Docking Flexible Proteins using Polynomial Expansions</em>,
 			supervised by Valérie Perrier and Sergei Grudinin, 
 			Grenoble Alpes University, ljk, INRIA,
 			Grenoble, France
 		<P>
-			2014 - <i class="fas fa-long-arrow-alt-right"></i>
+			2014 <i class="fas fa-long-arrow-alt-right"></i>
 			<strong>Master 2 Mathematics, Informatics and Applications</strong>
 			<em>Specialization: Modeling and scientific calculus</em>,
 			Joseph Fourier University,
 			Grenoble, France
 		</P>
-<!--
-		<P>	
-			2013 - <i class="fas fa-long-arrow-alt-right"></i> 
-			<strong>Master 1 Applied and Industrial Mathematics</strong>
-			Joseph Fourier University, Grenoble, France
-		<P>
-		</P>	
-			2012 - <i class="fas fa-long-arrow-alt-right"></i> 
-			<strong>Bachelor in Mathematics and Computer science</strong>
-			Joseph Fourier University, Grenoble, France
-		</P>
--->
+		
 		<H2><A ID="SECTION00012000000000000000"> Work Experience</A> </H2>
+		
 		<P>
 			2022-now <i class="fas fa-long-arrow-alt-right"></i>
 			<strong>Post-doc position</strong>
@@ -78,6 +71,113 @@
 			supervised by Dimitri Komatitsch, Vadim Monteiller and Cédric Bellis, Aix Marseille Univesity, lma, CNRS
 			Marseille, France
 		</P>
+		
+		<H1><A ID="SECTION00020000000000000000"> Research </A> </H1>
+
+		<H2><A ID="SECTION00021000000000000000"> PhD project (2014-2018)</A> </H2>
+
+		<P>
+			I worked with Nano-D research team. Nano-D is a LJK and INRIA research team, which develops algorithms for Modelling and Simulation of Nanosystems. My doctoral thesis focused 
+			on algorithm designs for system modelling for Proteins and Macromolecular assemblies. My research consisted of two main parts.
+		</P>
+		<P>
+			<strong>FFT accelerated exhaustive search</strong>
+			Our goal was to extend the FFT-based exhaustive search method, applied so far to 6D  rigid bodies DOF, to the off-grid rigid and flexible DOF.
+			We started by <a href="https://inria.hal.science/hal-01553293/document">exhaustively sampling the rigid off-grid DOF</a> and later implemented flexible global DOF, which were obtained using the NMA. 
+		</P>
+		<P>
+			<strong>Large scale global molecular motions</strong>
+			We proposed a method for nonlinear NMA called <a href="https://inria.hal.science/hal-01505843/file/NOLB-Author-Version.pdf">NOLB</a>, which relies on the theoretical basis of the RTB method. 
+			Overall, our method produces better structures compared with the standard 
+			approach, especially at large deformation amplitudes. 
+			To the best of our knowledge, this was the first work on non-linear normal mode 
+			extrapolation in the Cartesian space.
+			And later applied to <a href="https://inria.hal.science/hal-01735214/file/RapidRMSDSI.pdf">RMSD computation</a>, 
+			<a href="https://journals.iucr.org/paper?a57377">flexible fitting</a> 
+			and <a href="https://inserm.hal.science/LJK_MAD_NANO-D/hal-02291552v1">functional motions prediction</a>.
+		</P>
+		
+		<H2><A ID="SECTION00022000000000000000"> Post-doctoral research </A></H2>
+		
+		<P><strong>Optmization techniques for FWI (2018-2020)</strong>
+			I first worked on the optimization part of the problem within the lma under the supervision of Dimitri Komatitsch, Vadim Monteiller and Cédric Bellis.
+			We first proposed a <a href="https://hal.science/hal-02908126">robust FWI algorithm</a>.
+			The method produced excellent results on difficult synthetic problems with strong contrasts, even when low frequency data were not available. 
+			The standard method was unable to solve this problem du to cycle-skipping. 
+			We are currently working on another optimization algorithm that uses both a trm and tools from image processing
+			to regularize the FWI. 
+		</P>
+		<P><strong>Uncertainty quantification for FWI (2020-2022)</strong>
+			I then worked on the uncertainty quantification for the FWI within the isterre under the supervision of Ludovic Métivier and Romain Brossier.
+			We worked on a time domain ensemble-FWI scheme that uses an ETKF to estimate the uncertainty of a FWI scheme.
+			Our work was applied to a North Sea obc data-set.
+		</P>
+		<P><strong>Extended precision for numerical methods (2022-now)</strong>
+			I'm currently working on the impact of numerical precision on Krylov solvers CEA-List under the supervision of Yves Durand.
+			We first showed how numerical precision can speedup the convergence of both BiCG and QMR solvers for the wave equation, 
+			especially when it is discretized with high-order SEM.  We then showed, on a FWI inspired, how numerical precision could 
+			speed-up, and in some case enable the convergence of the block variant of the BiCG.
+		</P>
+		
+		<H1><A ID="SECTION00030000000000000000"> Publications and scientific presentations </A></H1>
+		
+		<H2><A ID="SECTION00031000000000000000"> International journals </A></H2>
+		
+		<UL>
+			<li> Hoffmann, A., Monteiller, V., & Bellis, C. (2021). <em>A penalty-free approach to PDE constrained optimization: application to an inverse wave problem</em>. Inverse Problems, 37(5), 055002.
+			<br> Available <a href="https://hal.science/hal-02908126"> here </a> </li>
+			
+			<li>Grudinin, S., Laine, E., & Hoffmann, A. (2020). <em>Predicting protein functional motions: an old recipe with a new twist</em>. Biophysical journal, 118(10), 2513-2525.
+			<br> Available <a href="https://dumas.ccsd.cnrs.fr/LJK_MAD_NANO-D/hal-02291552v1"> here </a> </li>
+			
+			<li>Grudinin, S., Hoffmann, A., Martel, A. & Prevost, S. (2018) <em>Flexible fitting of macromolecular structures into small-angle scattering (SAXS and SANS) profiles</em>. Acta Cryst. A74, e180.</li>
+			
+			<li>Neveu, E., Popov, P., Hoffmann, A., Migliosi, A., Besseron, X., Danoy, G., ... & Grudinin, S. (2018). <em>RapidRMSD: Rapid determination of RMSDs corresponding to motions of flexible molecules</em>. Bioinformatics, 34(16), 2757-2765. 
+			<br> Available <a href="https://inria.hal.science/hal-01735214/file/RapidRMSDSI.pdf"> here </a> </li>
+			
+			<li>Hoffmann, A., & Grudinin, S. (2017). <em>NOLB: Nonlinear rigid block normal-mode analysis method</em>. Journal of chemical theory and computation, 13(5), 2123-2134. 
+			<br> Available <a href="https://inria.hal.science/hal-01505843/file/NOLB-Author-Version.pdf"> here </a> </li>
+			
+			<li>Hoffmann, A., Perrier, V., & Grudinin, S. (2017). <em>A novel fast Fourier transform accelerated off-grid exhaustive search method for cryo-electron microscopy fitting</em>. Journal of Applied Crystallography, 50(4), 1036-1047.
+			<br> Available <a href="https://inria.hal.science/hal-01553293/document"> here </a> </li>
+		</UL>
+		
+		<H2><A ID="SECTION00032000000000000000"> Reviewed international conferences </A></H2>
+		
+		<UL>
+			<li> Metivier, L., Brossier, R., Hoffmann, A., Mirebeau, J., Provenzano, G., Tarayoun, A., & Yong, P. (2023, June). <em>Anisotropic diffusion filter for 3D full waveform inversion: application to a North Sea dataset</em>. In 84th EAGE Annual Conference & Exhibition (Vol. 2023, No. 1, pp. 1-5). European Association of Geoscientists & Engineers. 
+			<br> Available <a href="https://dumas.ccsd.cnrs.fr/LJK_MAD_EDP/hal-04278874v1"> here </a> </li>
+		</UL>
+		
+		<H2><A ID="SECTION00033000000000000000"> Other international publications (posters, short papers) </A></H2>
+		
+		<UL>
+			<li> Hoffmann, A. and Grudinin, S. (2017 May)<em> FFT-accelerated exhaustive flexible fitting method</em>. Poster presentation at the GGMM conference. Reims, France.</li>
+			
+			<li> Hoffmann, A. and Grudinin, S. (2016 April)<em> Towards FFT-accelerated off-grid search with applications to structural bioinformaticss</em>. Poster presentation at the CAPRI Conference. 
+				Tel-Aviv, Israel.</li>
+		</UL>
+		
+		<H2><A ID="SECTION00034000000000000000"> Research reports and publications under review </A></H2>
+		
+		<UL>
+			<li> Hoffmann, A., Brossier, R., Metivier, L. & Tarayoun, A. <em> 
+				Uncertainty quantification for 3D time-domain full waveform inversion with ensemble Kalman filters: application to a North sea OBC dataset</em>. 
+				Geophysical Journal International (Under review). 
+				<br> Preprint available <a href="https://www.dropbox.com/scl/fi/6u5n6ggxfabxdfv0w6m6v/2022_hoffmann_time_domain_etkf_3d_v6.pdf?rlkey=xa6zrxyouhe4qhziw7okrvshq&dl=0"> here </a> </li>
+			<li>Hoffmann, A., Durand, Y. & Fereyre, J. <em>Stabilizing the Block Bi-Conjugate Gradient Solver with Extended Precision: A Case Study</em> 
+				IEEE International Symposium on Computer Arithmetic (submited) </li>
+			<li>Hoffmann, A., Durand, Y. & Fereyre, J. <em>Accelerating Spectral Elements Method with Extended Precision: A Case Study</em>.
+			 International Journal of Applied Physics and Mathematics (accepted). </li>
+		</UL>
+		
+		<H1><A ID="SECTION00040000000000000000"> Distributed software </A></H1>
+		<UL>
+			<li> Hoffmann, A. <a href="https://github.com/alexandrehoffmann/LightFEM"> LightFEM<a>. <em>Light weight expression template based high order finite element library.</em> </li>
+			<li> Hoffmann, A. & Grudinin, S. <a href="https://team.inria.fr/nano-d/software/nolb-normal-modes/"> NOLB Normal Modes<a>. <em>NOn-Linear rigid Block NMA approach (NOLB)  a new conceptually simple and computationally efficient method for non-linear normal mode analysis.</em> </li>
+			<li> Hoffmann, A. & Grudinin, S. <a href="https://team.inria.fr/nano-d/software/offgridfit/"> OffGridFit<a>. <em>OffGridFit is a novel FFT-based exhaustive search method extended to off-grid translational and rotational degrees of freedom.</em> </li>
+		</UL>
+		
 	</body>
 </html>
 
